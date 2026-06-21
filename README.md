@@ -1,6 +1,6 @@
 # Fed Uncertainty Index — Research Repository
 
-This repository contains all code developed for the empirical part of the thesis
+This repository contains all code developed for the empirical part of the undergraduate thesis
 *Generative and Agentic AI in Economics, and an Uncertainty Index from Federal
 Reserve Speeches*. The project constructs monthly uncertainty indices from Federal
 Reserve Board speeches (2006–2026) using four NLP methodologies of increasing
@@ -115,7 +115,7 @@ Scripts must be run in the order shown below. Each script depends on the outputs
 
 Scripts 03–06 are independent of each other and can be run in any order once script 02 has completed. 
 However, all outputs are stored to .pkl file, so any script can be run in any order. 
-The execution order need only be followed when deleting or wanting to overwrite the data/ files.
+The execution order need only be followed when deleting or wanting to overwrite the `data/` files.
 
 ---
 
@@ -246,7 +246,7 @@ Scripts 05 and 06 are the primary computational bottlenecks. If GPU acceleration
 
 ```bash
 # 1. Clone the repository
-git clone [repository-url]
+git clone https://github.com/Roug3n/Uncertainty-Indices-from-Fed-speeches
 cd fed-uncertainty-thesis
 
 # 2. Create and activate a virtual environment
@@ -288,10 +288,6 @@ If you wish to skip the scraping step, the raw corpus file `all_fed_speeches` is
 
 ## Citation
 
-If you use this code or the resulting indices in your own work, please cite the thesis:
+If you use this code or the resulting indices in your own work, please cite the undergraduate thesis:
 
 > Tobella, P. (2026). *Implications of Generative AI for the Work of Economists: Constructing an Uncertainty Index from Federal Reserve Speeches Using Natural Language Processing (NLP)*. Undergraduate thesis, Universitat de Barcelona / Universitat Politècnica de Catalunya.
-
-The scraping framework in script 01 was originally developed by Smith (2020) and substantially adapted for this project:
-
-> Smith, D. (2020). NLP-Fed-Speeches. GitHub repository. https://github.com/davidjsmith44/NLP-Fed-Speeches
